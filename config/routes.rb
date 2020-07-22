@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   delete :logout, to: "sessions#logout"
   get :logged_in, to: "sessions#logged_in"
   resources :registrations, only: [:create]
+  resources :habits
   root to: "static#home"
 end
